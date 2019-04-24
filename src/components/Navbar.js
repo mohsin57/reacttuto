@@ -4,7 +4,9 @@ import React from 'react';
 function Navbar()
 {
 return(
-<nav className="navbar navbar-default">
+  
+        
+<nav className="navbar navbar-dark bg-dark">
 <div className="container-fluid">
 <div  className="navbar-header">
 <h1 className="navbar-brand"><i>Venturedive</i></h1>
@@ -12,10 +14,10 @@ return(
 
 
 <div>
-<span className="btn"> <a href="#">Home</a></span>
-<span className="btn"> <a href="#">Acadmics</a></span>
-<span className="btn"> <a href="#">About Us</a></span>
-<span className="btn"> <a href="#">Contact</a></span>
+<span className="btn btn-success mx-2" > <a href="#" style={{color:"#FFFFFF"}}>Home</a></span>
+<span className="btn btn-success mx-2"> <a href="#" style={{color:"#FFFFFF"}}>Acadmics</a></span>
+<span className="btn btn-success mx-2"> <a href="#" style={{color:"#FFFFFF"}}>About Us</a></span>
+<span className="btn btn-success mx-2"> <a href="#" style={{color:"#FFFFFF"}}>Contact</a></span>
 </div>    
    
 
@@ -24,6 +26,7 @@ return(
 
 
 </nav>
+    
     )
 }
 

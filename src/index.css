@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.enter-list
+{
+    margin: 25px  auto;
+    padding:30px;
+    width: 25%;
+    background-color: whitesmoke;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #efefef;
+    box-shadow:
+    /* The top layer shadow */
+        0 1px 1px rgba(0,0,0,0.15),
+            /* The second layer */
+        0 10px 0 -5px #eee,
+            /* The second layer shadow */
+        0 10px 1px -4px rgba(0,0,0,0.15),
+            /* The third layer */
+        0 20px 0 -10px #eee,
+            /* The third layer shadow */
+        0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 30px;
+}
+.footcolors
+{
+    color:white;
+    background:brown;
+}
+.BUTCOL{
+  background-color: GREEN;
+  color:white;
+}
+.inp
+{
+  border-radius: 1.2rem;
+  border:0px;
+}
