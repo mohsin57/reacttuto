@@ -8,7 +8,9 @@ function Footer()
     return(
 <div className="footcolors" >
 
-<p align="center">this copyrights&copy; goes to tauseef&Mohsin.</p>
+<marquee behavior="scroll" direction="right">All Rights Reserved © 2019 Mohsin & Tauseef Pvt Ltd.</marquee>
+
+
 </div>
     )
 }
