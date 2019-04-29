@@ -49,3 +49,10 @@ code {
   border-radius: 1.2rem;
   border:0px;
 }
+.footerlogo
+{
+  height: 16px;
+  width: 30px;
+  background-color: sandybrown;
+  margin: 10px;
+}

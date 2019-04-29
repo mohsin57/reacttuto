@@ -5,18 +5,51 @@ import TodoItem from './TodoItem';
 import todosData from './TodoData'
 
 
-function MainContent(){
-const todoItems = todosData.map(item => <TodoItem todo={item}/>)
+class MainContent extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            todos : todosData
 
-    return( <div className="enter-list" >
-        <div>
-            <input  className="inp"type="textbox" placeholder="enter-list"></input><br/><br/>
-<span className="btn btn-primary btn-sm mx-2" > Submit</span>
-<br/>
-        {todoItems}
+        }
+        this.handlerchange = this.handlerchange.bind(this)
+    }
+    handlerchange(id)
+    {
+        this.setState (prevState => {
+            const updatedtodos= prevState.todos.map(todo => {
+                if(todo.id === id){
+
+                    todo.completed = !todo.completed;
+                    
+                }
+                return todo
+                
+            }  
+            )
+            return {
+                todos: updatedtodos
+            }
+        })
+
+    }
+
+    
+    render(){
+        const todoItems = this.state.todos.map(item => <TodoItem todo={item} handlerchange={this.handlerchange}/>  )
+
+        return( 
+        <div className="enter-list" >
+            <div>
+                <input  className="inp"type="textbox" placeholder="enter-list"></input><br/><br/>
+    <span className="btn btn-primary btn-sm mx-2" > Submit</span>
+    <br/>
+            {todoItems}
+        </div>
     </div>
-</div>
-    )
+        )
+    }
+
    
 }
 
