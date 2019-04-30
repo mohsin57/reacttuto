@@ -2,7 +2,8 @@
 
 import React from 'react';
 import TodoItem from './TodoItem';
-import todosData from './TodoData'
+import todosData from './TodoData';
+
 
 
 class MainContent extends React.Component{
@@ -32,17 +33,20 @@ class MainContent extends React.Component{
             }
         })
 
+       
     }
+    
 
     
     render(){
         const todoItems = this.state.todos.map(item => <TodoItem todo={item} handlerchange={this.handlerchange}/>  )
 
         return( 
-        <div className="enter-list" >
-            <div>
-                <input  className="inp"type="textbox" placeholder="enter-list"></input><br/><br/>
-    <span className="btn btn-primary btn-sm mx-2" > Submit</span>
+        <div className="enter-list">
+            <div className="cnt">
+                <input  className="inp"type="textbox" placeholder="enter-list"></input>
+                <button className="btn btn-primary btn-sm mx-2">Submit</button><br/><br/>
+
     <br/>
             {todoItems}
         </div>

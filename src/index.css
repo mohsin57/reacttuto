@@ -16,7 +16,7 @@ code {
 {
     margin: 25px  auto;
     padding:30px;
-    width: 30%;
+    width: 47%;
     background-color: whitesmoke;
     border-radius: 1.2rem;
     display: flex;
@@ -55,4 +55,15 @@ code {
   width: 30px;
   background-color: sandybrown;
   margin: 10px;
+}
+.cnt{
+  width: 50%;
+  margin: 0 auto;
+}
+.load{
+  background-color: chartreuse;
+}
+.loaded
+{
+  background-color: steelblue;
 }
